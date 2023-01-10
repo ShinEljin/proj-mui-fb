@@ -10,8 +10,12 @@ export default class MyDocument extends Document {
       <Html lang="en" className={roboto.className}>
         <Head>
           {/* PWA primary color */}
+
           <meta name="theme-color" content={theme.palette.primary.main} />
-          <link rel="shortcut icon" href="/favicon.ico" />
+          <link
+            rel="shortcut icon"
+            href="https://cdn-icons-png.flaticon.com/512/4102/4102964.png"
+          />
           <meta name="emotion-insertion-point" content="" />
           {this.props.emotionStyleTags}
         </Head>
