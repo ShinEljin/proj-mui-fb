@@ -1,17 +1,19 @@
-import {
-  AppBar,
-  styled,
-  Toolbar,
-  Typography,
-  Box,
-  InputBase,
-  Badge,
-  Avatar,
-} from "@mui/material";
+import AppBar from "@mui/material/AppBar";
+import Avatar from "@mui/material/Avatar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import InputBase from "@mui/material/InputBase";
+import Badge from "@mui/material/Badge";
+
 import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/Email";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import SearchIcon from "@mui/icons-material/Search";
+
+//MUI STYLED
+import styled from "@mui/system/styled";
+
 import { useState } from "react";
 
 import UserDropDown from "./UserDropDown";

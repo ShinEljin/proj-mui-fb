@@ -1,7 +1,17 @@
-import { Avatar, Divider, ListItemIcon, Menu, MenuItem } from "@mui/material";
-import { Logout, PersonAdd, Settings } from "@mui/icons-material";
+import Avatar from "@mui/material/Avatar";
+import Divider from "@mui/material/Divider";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+
+import Logout from "@mui/icons-material/Logout";
+import PersonAdd from "@mui/icons-material/PersonAdd";
+import Settings from "@mui/icons-material/Settings";
+import { useRouter } from "next/router";
 
 function UserDropDown({ profileMenuOpen, setProfileMenuOpen }) {
+  const router = useRouter();
+
   return (
     <Menu
       open={profileMenuOpen}
@@ -34,7 +44,7 @@ function UserDropDown({ profileMenuOpen, setProfileMenuOpen }) {
           },
         },
       }}
-      anchorOrigin={{ horizontal: "right", vertical: "top " }}
+      anchorOrigin={{ horizontal: "right", vertical: "top" }}
     >
       <MenuItem>
         <ListItemIcon>
@@ -55,7 +65,11 @@ function UserDropDown({ profileMenuOpen, setProfileMenuOpen }) {
         </ListItemIcon>
         Settings
       </MenuItem>
-      <MenuItem>
+      <MenuItem
+        onClick={(e) => {
+          router.push("/");
+        }}
+      >
         <ListItemIcon>
           <Logout fontSize="small" />
         </ListItemIcon>

@@ -1,15 +1,14 @@
+import Avatar from "@mui/material/Avatar";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Divider from "@mui/material/Divider";
+import Stack from "@mui/material/Stack";
+import TextField from "@mui/material/TextField";
+
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import ImageIcon from "@mui/icons-material/Image";
 import VideoCameraBackIcon from "@mui/icons-material/VideoCameraBack";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import {
-  Avatar,
-  Card,
-  CardContent,
-  Divider,
-  Stack,
-  TextField,
-} from "@mui/material";
 
 import Post from "./Post";
 

@@ -1,19 +1,18 @@
-import {
-  Avatar,
-  AvatarGroup,
-  Box,
-  Divider,
-  ImageList,
-  ImageListItem,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Typography,
-  Stack,
-  styled,
-  Badge,
-} from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import Badge from "@mui/material/Badge";
+import Divider from "@mui/material/Divider";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
+import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
+
+//MUI STYLED
+import styled from "@mui/system/styled";
+
 import { useState } from "react";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -68,16 +67,6 @@ const Rightbar = () => {
         <Typography variant="h6" fontWeight={300} mb={1}>
           Online Friends
         </Typography>
-        {/* <AvatarGroup
-          max={4}
-          sx={{ diplay: "flex", justifyContent: "flex-start" }}
-        >
-          <Avatar src="https://mui.com/static/images/avatar/1.jpg" />
-          <Avatar src="https://mui.com/static/images/avatar/2.jpg" />
-          <Avatar src="https://mui.com/static/images/avatar/3.jpg" />
-          <Avatar src="https://mui.com/static/images/avatar/4.jpg" />
-          <Avatar src="https://mui.com/static/images/avatar/5.jpg" />
-        </AvatarGroup> */}
         <Box>
           {images.map((image, index) => {
             return (
@@ -99,7 +88,7 @@ const Rightbar = () => {
           <ImageList
             sx={{ width: "100%", maxHeight: 105 }}
             cols={4}
-            rowHeight="100"
+            rowHeight={100}
           >
             {images.map((image, index) => (
               <ImageListItem key={index}>

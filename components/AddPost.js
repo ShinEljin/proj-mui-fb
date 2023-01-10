@@ -1,22 +1,20 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  ButtonGroup,
-  Fab,
-  Modal,
-  styled,
-  TextField,
-  Tooltip,
-  Typography,
-} from "@mui/material";
-import AddIcon from "@mui/icons-material/Add";
+//MUI COMPONENTS
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
+
+//MUI ICONS
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import ImageIcon from "@mui/icons-material/Image";
 import VideoCameraBackIcon from "@mui/icons-material/VideoCameraBack";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import { useState } from "react";
-import { Stack } from "@mui/system";
+
+//MUI STYLED
+import styled from "@mui/system/styled";
 
 const StyledModal = styled(Modal)({
   display: "flex",
